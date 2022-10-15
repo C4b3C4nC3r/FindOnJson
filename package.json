@@ -1,0 +1,20 @@
+{
+  "name": "findonjson",
+  "version": "1.0.0",
+  "description": "Script para buscar en distintas dimensiones",
+  "main": "script.js",
+  "scripts": {
+    "start": "node ."
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C4b3C4nC3r/FindOnJson.git"
+  },
+  "author": "Livington Lopez",
+  "license": "SEE LICENSE IN ./LICENSE",
+  "bugs": {
+    "url": "https://github.com/C4b3C4nC3r/FindOnJson/issues"
+  },
+  "homepage": "https://github.com/C4b3C4nC3r/FindOnJson#readme"
+}
