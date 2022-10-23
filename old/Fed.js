@@ -24,6 +24,8 @@ class Fed{
     }
     
     static fejr(valor, find){
+        const Descompress = require("./Descompress.js")
+
         descompress = new Descompress(valor,find)
     
         descompress.descompress()
