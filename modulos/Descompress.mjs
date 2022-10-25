@@ -3,6 +3,8 @@
  * Last Change : oct232022
  */
 
+import Fed from "./Fed.mjs";
+
 export default class Descompress {
     constructor(json, find) {
         this.json = json
@@ -31,7 +33,7 @@ export default class Descompress {
         let data = this.json;
         let find = this.find;
         let subdata = []
-
+        let result = false;
 
         for (const index in json) {
             if (Object.hasOwnProperty.call(json, index)) {
@@ -42,6 +44,7 @@ export default class Descompress {
                         if(key === this.find){
     
                             //instancia Fed
+                            result = Fed.fejd(data,key,valor,index)
                             
                         }else{
                             if(typeof(valor) === "object"){
@@ -60,6 +63,7 @@ export default class Descompress {
     
         if(!(!subdata.length)){
             //instancia Fed
+            console.log("volver a mandarlo a ejecutar esta funcion inancianco la clase");
         }
         return result;
 

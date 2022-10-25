@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "Script para buscar en distintas dimensiones",
   "main": "script.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "start": "node ."
-    
+    "start": "node .",
+    "test": "node test.js"
   },
   "repository": {
-    "type": " ",
+    "type": "git",
     "url": "git+https://github.com/C4b3C4nC3r/FindOnJson.git"
   },
   "author": "Livington Lopez",
