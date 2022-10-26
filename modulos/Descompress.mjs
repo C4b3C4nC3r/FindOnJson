@@ -43,9 +43,7 @@ export default class Descompress {
                         const valor = element[key];
                         if(key === this.find){
     
-                            //instancia Fed
                             result = Fed.fejd(data,key,valor,index)
-                            
                         }else{
                             if(typeof(valor) === "object"){
                                 subdata.push(valor)
@@ -62,8 +60,7 @@ export default class Descompress {
         }
     
         if(!(!subdata.length)){
-            //instancia Fed
-            console.log("volver a mandarlo a ejecutar esta funcion inancianco la clase");
+            result = (!result.length)?Fed.ferd(subdata,find):result;
         }
         return result;
 

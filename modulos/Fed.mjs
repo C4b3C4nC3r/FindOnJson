@@ -3,6 +3,8 @@
  * Last Change : oct232022
  */
 
+import Descompress from "./Descompress.mjs";
+
 export default class Fed {
 
     /**
@@ -40,6 +42,15 @@ export default class Fed {
     
             
         return result
+    }
+
+
+    static ferd(data,find){
+    
+        let dess = new Descompress(data,find);
+
+        return dess.desfract();
+
     }
 
 }
