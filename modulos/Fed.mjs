@@ -20,25 +20,24 @@ export default class Fed {
      *  "ubic":[],
      *  "value":[],
      *  "copy":[],
-     *  "dim":0
+     *  "dim": por defaul sera 1
      * }]
      * 
      * reemplaza los valores de los eleemtos de por defecto, el caso si existe datos,
      * 
      */
 
-    static fejd(data,key,valor,index){
+    static fejd(data,key,valor,index,dim){
         let result = [{
             "ubic":[0,null],
             "value":[null],
             "copy": data,
-            "dim":0
+            "dim":(dim===false)?1:dim
         }]
     
     
         result[0]["value"] = valor;
         result[0]["ubic"] = [index,key]
-        result[0]["dim"] =+1   
     
             
         return result

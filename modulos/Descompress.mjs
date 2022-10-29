@@ -26,13 +26,40 @@ export default class Descompress {
      *      "copy": data,
      *      "dim":dim
      *   }]
+     * 
+     *  subdata = {
+            "sububic":[],
+            "subdim":1,
+            "data":[]
+        }
+     * 
+     *  repData = [
+     *      {
+     *          data = [
+     *              {rep},
+     *               {rep},
+     *               ...
+     *               ],
+     *           
+     *       }
+     *   ]
+     * 
      */
     
     desfract(){
         let json = this.json;
         let data = this.json;
         let find = this.find;
-        let subdata = []
+        let subdata = {
+            "sububic":[],
+            "subdim":1,
+            "data":[]
+        }
+        let repData = {
+            "data":[
+                
+            ]
+        }
         let result = false;
 
         for (const index in json) {
@@ -43,10 +70,10 @@ export default class Descompress {
                         const valor = element[key];
                         if(key === this.find){
     
-                            result = Fed.fejd(data,key,valor,index)
+                            result = Fed.fejd(data,key,valor,index,false)
                         }else{
                             if(typeof(valor) === "object"){
-                                subdata.push(valor)
+                                subdata["data"].push(valor)
                                 
                             }
                             
@@ -60,7 +87,7 @@ export default class Descompress {
         }
     
         if(!(!subdata.length)){
-            result = (!result.length)?Fed.ferd(subdata,find):result;
+            result = (!result.length)?Fed.ferd(subdata["data"],find):result;
         }
         return result;
 
