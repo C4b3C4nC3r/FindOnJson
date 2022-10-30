@@ -53,7 +53,7 @@ export default class Descompress {
         let subdata = {
             "sububic":[],
             "subdim":1,
-            "data":[]
+            "data": []
         }
         let repData = {
             "data":[
@@ -86,7 +86,9 @@ export default class Descompress {
             }
         }
     
-        if(!(!subdata.length)){
+
+        if(!(!subdata["data"].length)){
+
             result = (!result.length)?Fed.ferd(subdata["data"],find):result;
         }
         return result;

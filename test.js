@@ -18,7 +18,7 @@ let json4d = fs.readFileSync("./json-Example/4d.json","utf-8")//unidimencional
 let json5d = fs.readFileSync("./json-Example/5d.json","utf-8")//unidimencional
 
 
-let des = new Descompress(JSON.parse(json1d),"y");
+let des = new Descompress(JSON.parse(json2d),"z");
 
 let result = des.desfract()
 
