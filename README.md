@@ -36,10 +36,6 @@ tambien puedes interactuar con los file.json
 
 ### NOW 
 
-- [+] old 
-    > Descompress.js
-    > Fed.js
-    > script.js
 
 - [+] modulos
     > Descompress.js
@@ -87,7 +83,7 @@ This scrip to find elements of json , in 1 to 6 dimensions
 
     ```
 
-la variable `rep` es igual alresultado de la funcion de `Fed.fejd(data,key,valor,index)`, solo que este estara dentro
+la variable `rep` es igual alresultado de la funcion de `Fed.fejd(data,keyword,valor)`, solo que este estara dentro
 de repData.
 
 ** Caso que existan elementos repetidos **, caso que no haya se procedera lo normal

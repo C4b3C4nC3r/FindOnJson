@@ -1,6 +1,6 @@
 /**
  * Autor : @C4b3C4nC3r
- * Last Change : oct232022
+ * Last Change : oct302022
  */
 
 import Descompress from "./Descompress.mjs";
@@ -9,27 +9,25 @@ export default class Fed {
 
     /**
      * 
-     * @params {data,key,valor,index}
-     * 
-     * 
-     * Retornara un resultado con los datos enviados de Descompress
-     * 
-     * Estructura del array de resultado
-     * 
-     * result = [{
-     *  "ubic":[],
-     *  "value":[],
-     *  "copy":[],
-     *  "dim": por defaul sera 1
-     * }]
-     * 
-     * reemplaza los valores de los eleemtos de por defecto, el caso si existe datos,
-     * 
+     * @param {object} data 
+     * @param {string} coor 
+     * @param {*} valor 
+     * @param {int} dim 
+     * @returns result = [
+     *  {
+     *      "coor":coor,
+     *      "value":[
+     *          ...
+     *       ],
+     *      "copy: data",
+     *      "dim":dim
+     *  }
+     * ]
      */
 
-    static fejd(data,key,valor,index,dim){
+    static fejd(data,coor,valor,dim){
         let result = [{
-            "ubic":[0,null],
+            "coor":coor,
             "value":[null],
             "copy": data,
             "dim":(dim===false)?1:dim
@@ -37,12 +35,20 @@ export default class Fed {
     
     
         result[0]["value"] = valor;
-        result[0]["ubic"] = [index,key]
     
             
         return result
     }
 
+    /**
+     * 
+     * @param {object} data 
+     * @param {string} find 
+     * @returns Funcion desfract de descompress
+     * 
+     * Uso para seguir con el seguimiento y bsuqueda en los objectos enviados
+     * 
+     */
 
     static ferd(data,find){
     
@@ -52,4 +58,19 @@ export default class Fed {
 
     }
 
+    /**
+     * 
+     * @param {int} index 
+     * @param {string} key 
+     * @returns coor
+     */
+
+    static keytocoor(index,key){
+
+        let coor = "0";
+
+        return coor;
+
+
+    }
 }
